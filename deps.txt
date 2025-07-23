@@ -1,0 +1,7 @@
+mininet
+p4lang-p4c
+p4lang-bmv2
+python3-scapy
+python3-dnslib
+tcpdump
+

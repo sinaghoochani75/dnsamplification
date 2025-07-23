@@ -1,0 +1,13 @@
+p4c --target bmv2 --arch v1model --std p4-16 p4dns.p4
+sudo python3 sina.py --behavioral-exe simple_switch --json p4dns.json --num-hosts 8
+simple_switch_CLI < commands.txt
+mininet> pingall
+
+# drop
+./dns.big.sh
+
+
+# accept
+./dns.small.sh
+
+sudo python3 send-dns-packets.py
